@@ -28,6 +28,10 @@ h3 {
     margin: 1em 0;
 }
 
+a {
+    overflow-wrap: break-word;
+}
+
 @media (max-width: 1023px) {
     nav { clear: both; }
     nav > ul {
@@ -136,7 +140,7 @@ ul.posts span {
 }
 
 img {
-    max-width: calc(100% - 1em);
+    max-width: 100%;
 }
 
 ul.posts div {
