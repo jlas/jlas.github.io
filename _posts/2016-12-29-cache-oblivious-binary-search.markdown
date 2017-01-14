@@ -19,11 +19,11 @@ layout.
 Initial results are promising, cache misses for a van Emde Boas based search
 are lower than inorder.
 
-![cache_misses](https://raw.githubusercontent.com/jlas/sample-code/master/datastructures/binsearch/experiments/media/cache_misses.png)
+[<img src="https://raw.githubusercontent.com/jlas/sample-code/master/datastructures/binsearch/experiments/media/cache_misses.png">](https://raw.githubusercontent.com/jlas/sample-code/master/datastructures/binsearch/experiments/media/cache_misses.png)
 
 However, the running time of the van Emde Boas based search is higher. We
 suspect this may be due to the non-trivial overhead of traversing a vEB tree.
 
-![time_elapsed](https://raw.githubusercontent.com/jlas/sample-code/master/datastructures/binsearch/experiments/media/time_elapsed.png)
+[<img src="https://raw.githubusercontent.com/jlas/sample-code/master/datastructures/binsearch/experiments/media/time_elapsed.png">](https://raw.githubusercontent.com/jlas/sample-code/master/datastructures/binsearch/experiments/media/time_elapsed.png)
 
 Link to code: [github.com/jlas/sample-code/tree/master/datastructures/binsearch](https://github.com/jlas/sample-code/tree/master/datastructures/binsearch)
