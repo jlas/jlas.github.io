@@ -47,6 +47,7 @@ h3 {
         font-size: 1em;
     }
 }
+
 @media (min-width: 1024px) {
     nav {
         float: left;
@@ -64,6 +65,9 @@ h3 {
     h1 { font-size: 1.8em }
     h2 { font-size: 1.7em }
     h3, h4, h5, h6 { font-size: 1.4em; }
+    ul.posts div {
+        width: calc(50% - 1em);
+    }
 }
 
 nav > div{
@@ -132,12 +136,10 @@ ul.posts span {
 }
 
 ul.posts img {
-    max-height: 18em;
-    max-width: 27em;
+    max-width: 100%;
 }
 
 ul.posts div {
-    width: calc(50% - 1em);
     margin: 0 1em 2em 0;
     float: left;
 }
