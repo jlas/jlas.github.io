@@ -2,7 +2,6 @@
 layout: post
 title: "Cache Oblivious Binary Search"
 date: 2016-12-29 12:00:00
-categories: python
 ---
 
 The goal of [Cache Oblivious algorithms](https://en.wikipedia.org/wiki/Cache-oblivious_algorithm)
