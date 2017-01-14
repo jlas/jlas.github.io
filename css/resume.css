@@ -1,0 +1,72 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    width: 1000px;
+    margin: 0 auto !important;
+    background-color: snow;
+}
+
+p {
+    margin: 0;
+}
+
+ul { margin: 0; }
+
+ul > li {
+    list-style-type: circle;
+    font-weight: lighter !important;
+}
+
+header {
+    height: 8em;
+}
+
+footer {
+    text-align: center;
+    margin-top: 1em;
+}
+
+header h1 {
+    position: absolute;
+    font-size: 64px;
+    margin: 0;
+}
+
+header address {
+    position: relative;
+    left: 600px;
+    width: 400px;
+}
+
+body > section {
+    position: relative;
+    left: 200px;
+    width: 800px;
+}
+
+section > div, .hgroup { position: relative; }
+section > div { margin-bottom: 1em; }
+section h2, #projects h4, section .period, section address {
+    position: absolute;
+    top: 0;
+    margin: 0;
+}
+
+section h2, section h3, section h4 { display: inline; }
+section address, section .period { width: 200px; }
+
+section h2 { left: -200px; }
+#projects h4 { left: 200px; }
+section address { left: 600px; }
+section .period { left: 600px; }
+
+#skills { height: 4em; }
+#skills > ul { padding: 0; }
+#skills > ul > li {
+    list-style-type: none;
+    display: block;
+    float: left;
+    width: 150px;
+}
