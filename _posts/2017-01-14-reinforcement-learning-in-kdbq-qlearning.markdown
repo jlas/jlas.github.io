@@ -47,4 +47,4 @@ Here we present the best learned trading strategies from a batch of 100 training
 
 [<img src="https://raw.githubusercontent.com/jlas/ml.q/master/rl/experiment/trade/results/topSPY.png">](https://raw.githubusercontent.com/jlas/ml.q/master/rl/experiment/trade/results/topSPY.png)
 
-Link to code: [github.com/jlas/ml.q/tree/master/rl/experiment/trade](https://github.com/jlas/ml.q/tree/master/rl/experiment/trade)
+Link to code: [github.com/jlas/ml.q](https://github.com/jlas/ml.q/tree/master/rl/experiment/trade)
