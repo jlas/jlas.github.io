@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ page.title }} | juanl.org</title>
+    <meta name="viewport" content="width=device-width">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div onclick="location.href='/';">juanl</div>
+        <ul>
+          <li><a href="http://www.github.com/jlas">github</a></li>
+          <li><a href="http://www.twitter.com/jlas_">twitter</a></li>
+          <li><a href="https://www.linkedin.com/in/juanlasheras">linkedin</a></li>
+        </ul>
+      </nav>
+      <div class="site">
+        <div class="header"></div>
+        {{ content }}
+      </div>
+    </div>
+
+    <!-- Piwik -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+      var u=(("https:" == document.location.protocol) ? "https" : "http") + "://analytics.juanlasheras.com/piwik/";
+      _paq.push(["setTrackerUrl", u+"piwik.php"]);
+      _paq.push(["setSiteId", "2"]);
+      var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+      g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Piwik Code -->
+
+    <noscript>
+      <!-- Piwik Image Tracker -->
+      <img src="http://analytics.juanlasheras.com/piwik/piwik.php?idsite=2&amp;rec=1" style="border:0" alt="" />
+      <!-- End Piwik -->
+    </noscript>
+
+  </body>
+</html>
