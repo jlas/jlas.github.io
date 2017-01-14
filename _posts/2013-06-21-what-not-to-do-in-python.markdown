@@ -2,7 +2,6 @@
 layout: post
 title: "What Not to Do in Python"
 date: 2013-06-21 12:00:00
-categories: python
 ---
 
 Ever run into a bug and think "Wow, I should have known that." Happens to me
