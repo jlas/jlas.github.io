@@ -26,7 +26,8 @@ out-of-sample trading. Market data from 500 stocks are used, spanning 10+ years.
 
 Initial results suggest lack luster average returns, but seemingly better than
 random trading, which produces similar average return with higher standard
-deviation.
+deviation. A return of 1.0 means the agent has as much money at the end of
+trading as it did at the start.
 
 [<img src="https://raw.githubusercontent.com/jlas/ml.q/master/rl/experiment/trade/results/return.png">](https://raw.githubusercontent.com/jlas/ml.q/master/rl/experiment/trade/results/return.png)
 
