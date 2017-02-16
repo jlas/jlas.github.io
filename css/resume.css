@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -34,6 +34,10 @@ header h1 {
     margin: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
 header address {
     position: relative;
     left: 600px;
@@ -63,10 +67,8 @@ section address { left: 600px; }
 section .period { left: 600px; }
 
 #skills { height: 4em; }
-#skills > ul { padding: 0; }
-#skills > ul > li {
-    list-style-type: none;
-    display: block;
+#skills > dl > dt {
     float: left;
     width: 150px;
+    font-weight: bold;
 }
