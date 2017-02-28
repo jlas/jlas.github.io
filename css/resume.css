@@ -2,31 +2,17 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    width: 1000px;
+    font-size: 16px;
+    width: 1050px;
     margin: 0 auto !important;
     background-color: snow;
 }
 
-p {
-    margin: 0;
-}
-
+p { margin: 0; }
 ul { margin: 0; }
-
-ul > li {
-    list-style-type: circle;
-    font-weight: lighter !important;
-}
-
-header {
-    height: 8em;
-}
-
-footer {
-    text-align: center;
-    margin-top: 1em;
-}
+ul > li { list-style-type: circle; }
+header { height: 6em; }
+footer { text-align: center; }
 
 header h1 {
     position: absolute;
@@ -40,18 +26,18 @@ h1, h2, h3, h4, h5, h6 {
 
 header address {
     position: relative;
-    left: 600px;
-    width: 400px;
+    left: 750px;
+    width: 300px;
 }
 
 body > section {
     position: relative;
-    left: 200px;
-    width: 800px;
+    left: 150px;
+    width: 900px;
 }
 
 section > div, .hgroup { position: relative; }
-section > div { margin-bottom: 1em; }
+#skills, section > div { margin-bottom: .9em; }
 section h2, #projects h4, section .period, section address {
     position: absolute;
     top: 0;
@@ -59,14 +45,16 @@ section h2, #projects h4, section .period, section address {
 }
 
 section h2, section h3, section h4 { display: inline; }
-section address, section .period { width: 200px; }
+section address, section .period { width: 300px; }
 
-section h2 { left: -200px; }
-#projects h4 { left: 200px; }
+section h2 {
+    left: -150px;
+    width: 150px;
+}
+#projects h4 { left: 150px; }
 section address { left: 600px; }
 section .period { left: 600px; }
 
-#skills { height: 4em; }
 #skills > dl > dt {
     float: left;
     width: 150px;
