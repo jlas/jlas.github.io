@@ -8,6 +8,7 @@ body {
     background-color: snow;
 }
 
+a { text-decoration: none; }
 p { margin: 0; }
 ul { margin: 0; }
 ul > li { list-style-type: circle; }
