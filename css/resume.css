@@ -11,6 +11,7 @@ body {
 a { text-decoration: none; }
 p { margin: 0; }
 ul { margin: 0; }
+#work-experience ul { line-height: 1.5em; }
 ul > li { list-style-type: circle; }
 header { height: 6em; }
 footer { text-align: center; }
@@ -38,7 +39,7 @@ body > section {
 }
 
 section > div, .hgroup { position: relative; }
-#skills, section > div { margin-bottom: .9em; }
+#skills, section > div { margin-bottom: .75em; }
 section h2, #projects h4, section .period, section address {
     position: absolute;
     top: 0;
