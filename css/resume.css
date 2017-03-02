@@ -35,11 +35,11 @@ header address {
 body > section {
     position: relative;
     left: 150px;
-    width: 900px;
+    width: 850px;
 }
 
 section > div, .hgroup { position: relative; }
-#skills, section > div { margin-bottom: .75em; }
+#skills, section > div { margin-bottom: .9em; }
 section h2, #projects h4, section .period, section address {
     position: absolute;
     top: 0;
