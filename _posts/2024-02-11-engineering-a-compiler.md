@@ -11,7 +11,7 @@ I recently read [Engineering a Compiler](https://www.amazon.com/Engineering-Comp
 Here are some key concepts and algorithms that really resonated with me:
 
 ### Layers
-A compiler is fundamentally composed of layers of software that, when combined, perform a remarkable task (taking human readable instructions and converting it to 1s and 0s!) But each layer is self contained, and to a certain extent, quite simple. This is quite beautiful.
+A compiler is fundamentally composed of layers of software that, when combined, perform a remarkable task (taking human readable instructions and converting it to 1s and 0s!) But each layer is self contained, and to a certain extent, simple. This is quite beautiful.
 
 ### Finite automata
 An automata is just a state machine. In a compiler we see it used for [scanning](https://en.wikipedia.org/wiki/Lexical_analysis#Scanner), where it is used to recognize words in the source text. For example, it will encounter a character and essentially ask, “should I combine this with the last few characters I've seen and tag it as a variable name?”
