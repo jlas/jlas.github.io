@@ -33,6 +33,19 @@ a {
   overflow-wrap: break-word;
 }
 
+h1 {
+  font-size: 1.8em;
+}
+h2 {
+  font-size: 1.7em;
+}
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1.4em;
+}
+
 @media (max-width: 1023px) {
   nav {
     clear: both;
@@ -50,15 +63,6 @@ a {
   }
   .site {
     margin: 1em;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    text-align: left;
-    font-size: 1em;
   }
 }
 
@@ -80,19 +84,7 @@ a {
   .container {
     padding: 3em 0 0 0;
   }
-  h1 {
-    font-size: 1.8em;
-  }
-  h2 {
-    font-size: 1.7em;
-  }
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-size: 1.4em;
-  }
-  ul.posts div {
+  ul.projects div {
     width: calc(50% - 1em);
   }
 }
@@ -110,17 +102,6 @@ nav > ul {
 nav > ul > li {
   margin-bottom: 5px;
 }
-
-h3 {
-  position: relative;
-  left: -1em;
-}
-h3:before {
-  content: url("../images/green_dust_scratch_16px.png");
-  position: relative;
-  left: -0.2em;
-}
-
 h1 {
   margin-bottom: 1em;
 }
@@ -154,30 +135,34 @@ blockquote {
 /* Home
 /*
 /*****************************************************************************/
-ul.posts {
+ul.posts,
+ul.projects {
   list-style-type: none;
   margin-bottom: 2em;
 }
 
-ul.posts li {
+ul.posts > li,
+ul.projects > li {
   line-height: 1.75em;
   display: inline-block;
   width: 100%;
 }
 
-ul.posts span {
+ul.projects div {
+  margin: 0 1em 2em 0;
+  float: left;
+}
+
+ul.posts > li > div {
   color: #aaa;
   font-family: Monaco, "Courier New", monospace;
   font-size: 80%;
+  float: left;
+  margin-right: 0.5em;
 }
 
 img {
   max-width: 100%;
-}
-
-ul.posts div {
-  margin: 0 1em 2em 0;
-  float: left;
 }
 
 /*****************************************************************************/
@@ -244,7 +229,6 @@ footer .contact a {
 
 img[alt="feed"] {
   position: relative;
-  top: -0.1em;
 }
 
 /*****************************************************************************/
