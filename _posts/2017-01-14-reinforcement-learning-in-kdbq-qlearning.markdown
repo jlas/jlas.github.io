@@ -11,11 +11,11 @@ behave by taking actions and receiving rewards.
 We present an approach for training an agent to behave optimally in a trading
 environment. We model such an environment with some simplifying assumptions:
 
- * There is only one opportunity to trade per day which must be done by paying
- the `close` price provided in historical market data.
- * An agent either has a long or short position in one security. The exact
- number of shares is made irrelevant by using cumulative returns.
- * No transaction costs are taken into account.
+- There is only one opportunity to trade per day which must be done by paying
+  the `close` price provided in historical market data.
+- An agent either has a long or short position in one security. The exact
+  number of shares is made irrelevant by using cumulative returns.
+- No transaction costs are taken into account.
 
 Using a simple set of technical indicators derived from market data an agent
 is trained using the [Q-learning](https://en.wikipedia.org/wiki/Q-learning)

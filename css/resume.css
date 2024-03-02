@@ -1,64 +1,105 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    width: 1050px;
-    margin: 0 auto !important;
-    background-color: snow;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  width: 1050px;
+  margin: 0 auto !important;
+  background-color: snow;
 }
 
-a { text-decoration: none; }
-p { margin: 0; }
-ul { margin: 0; }
-#work-experience ul { line-height: 1.5em; }
-ul > li { list-style-type: circle; }
-header { height: 6em; }
-footer { text-align: center; }
+a {
+  text-decoration: none;
+}
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+}
+#work-experience ul {
+  line-height: 1.5em;
+}
+ul > li {
+  list-style-type: circle;
+}
+header {
+  height: 6em;
+}
+footer {
+  text-align: center;
+}
 
 header h1 {
-    position: absolute;
-    font-size: 64px;
-    margin: 0;
+  position: absolute;
+  font-size: 64px;
+  margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: normal;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
 }
 
 header address {
-    position: relative;
-    left: 750px;
-    width: 300px;
+  position: relative;
+  left: 750px;
+  width: 300px;
 }
 
 body > section {
-    position: relative;
-    left: 150px;
-    width: 850px;
+  position: relative;
+  left: 150px;
+  width: 850px;
 }
 
-section > div, .hgroup { position: relative; }
-#skills, section > div { margin-bottom: .9em; }
-section h2, #projects h4, section .period, section address {
-    position: absolute;
-    top: 0;
-    margin: 0;
+section > div,
+.hgroup {
+  position: relative;
+}
+#skills,
+section > div {
+  margin-bottom: 0.9em;
+}
+section h2,
+#projects h4,
+section .period,
+section address {
+  position: absolute;
+  top: 0;
+  margin: 0;
 }
 
-section h2, section h3, section h4 { display: inline; }
-section address, section .period { width: 300px; }
+section h2,
+section h3,
+section h4 {
+  display: inline;
+}
+section address,
+section .period {
+  width: 300px;
+}
 
 section h2 {
-    left: -150px;
-    width: 150px;
+  left: -150px;
+  width: 150px;
 }
-#projects h4 { left: 150px; }
-section address { left: 600px; }
-section .period { left: 600px; }
+#projects h4 {
+  left: 150px;
+}
+section address {
+  left: 600px;
+}
+section .period {
+  left: 600px;
+}
 
 #skills > dl > dt {
-    float: left;
-    width: 150px;
-    font-weight: bold;
+  float: left;
+  width: 150px;
+  font-weight: bold;
 }

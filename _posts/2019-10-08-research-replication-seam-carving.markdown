@@ -6,15 +6,15 @@ date: 2019-10-08
 
 Seam Carving is a novel technique for doing content-aware image resizing aka "image retargeting". The idea is to remove seams of low-energy pixels one at a time until the image is truncated to the desired dimensions. In the papers cited below we are introduced to the concept and its applications.
 
-* Shamir, A., & Avidan, S. (2007) Seam Carving for Content-Aware Image Resizing. [http://www.faculty.idc.ac.il/arik/SCWeb/imret/index.html](http://www.faculty.idc.ac.il/arik/SCWeb/imret/index.html)
-* Rubinstein, M., Shamir, A., & Avidan, S. (2008) Improved Seam Carving for Video Retargeting. [http://www.faculty.idc.ac.il/arik/SCWeb/vidret/index.html](http://www.faculty.idc.ac.il/arik/SCWeb/vidret/index.html)
+- Shamir, A., & Avidan, S. (2007) Seam Carving for Content-Aware Image Resizing. [http://www.faculty.idc.ac.il/arik/SCWeb/imret/index.html](http://www.faculty.idc.ac.il/arik/SCWeb/imret/index.html)
+- Rubinstein, M., Shamir, A., & Avidan, S. (2008) Improved Seam Carving for Video Retargeting. [http://www.faculty.idc.ac.il/arik/SCWeb/vidret/index.html](http://www.faculty.idc.ac.il/arik/SCWeb/vidret/index.html)
 
 We present an implementation of the Seam Carving technique in pure JavaScript running in the browser. The implementation of the algorithm is summarized:
 
-* Calculate image gradient in x and y direction
-* Use dynamic programming to calculate minimum seam energies over the entire image
-* Extract the minimum energy seam, this removes exactly 1 pixel along one dimension
-* Repeat until the desired dimension is achieved
+- Calculate image gradient in x and y direction
+- Use dynamic programming to calculate minimum seam energies over the entire image
+- Extract the minimum energy seam, this removes exactly 1 pixel along one dimension
+- Repeat until the desired dimension is achieved
 
 <p></p>
 

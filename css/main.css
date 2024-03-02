@@ -9,112 +9,144 @@
 
 /* Global Reset */
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Open Sans', sans-serif;
+html,
+body {
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
-    background-color: #FFF;
-    font-size: small;
-    text-align: center;
+  background-color: #fff;
+  font-size: small;
+  text-align: center;
 }
 
 h3 {
-    margin: 1em 0;
+  margin: 1em 0;
 }
 
 a {
-    overflow-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 @media (max-width: 1023px) {
-    nav { clear: both; }
-    nav > ul {
-        width: 100%;
-        height: 1em;
-        margin: 5px 0;
-        display: inline-flex;
-        justify-content: center;
-    }
-    nav > ul > li {
-        float: left;
-        width: 100px;
-    }
-    .site { margin: 1em; }
-    h1, h2, h3, h4, h5, h6 {
-        text-align: left;
-        font-size: 1em;
-    }
+  nav {
+    clear: both;
+  }
+  nav > ul {
+    width: 100%;
+    height: 1em;
+    margin: 5px 0;
+    display: inline-flex;
+    justify-content: center;
+  }
+  nav > ul > li {
+    float: left;
+    width: 100px;
+  }
+  .site {
+    margin: 1em;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-align: left;
+    font-size: 1em;
+  }
 }
 
 @media (min-width: 1024px) {
-    nav {
-        float: left;
-    }
-    nav > div { margin-left: 2em; }
-    nav > ul { margin: 1em 0 0 4em; }
-    .site {
-        float: left;
-        margin-left:2em;
-        width: 42em;
-    }
-    .container {
-        padding: 3em 0 0 0;
-    }
-    h1 { font-size: 1.8em }
-    h2 { font-size: 1.7em }
-    h3, h4, h5, h6 { font-size: 1.4em; }
-    ul.posts div {
-        width: calc(50% - 1em);
-    }
+  nav {
+    float: left;
+  }
+  nav > div {
+    margin-left: 2em;
+  }
+  nav > ul {
+    margin: 1em 0 0 4em;
+  }
+  .site {
+    float: left;
+    margin-left: 2em;
+    width: 42em;
+  }
+  .container {
+    padding: 3em 0 0 0;
+  }
+  h1 {
+    font-size: 1.8em;
+  }
+  h2 {
+    font-size: 1.7em;
+  }
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1.4em;
+  }
+  ul.posts div {
+    width: calc(50% - 1em);
+  }
 }
 
-nav > div{
-    font-size: 2em;
-    padding: .5em 1em .5em 1em;
-    background-image: url("/images/green_dust_scratch.png");
-    color: #140;
-    cursor: pointer;
+nav > div {
+  font-size: 2em;
+  padding: 0.5em 1em 0.5em 1em;
+  background-image: url("/images/green_dust_scratch.png");
+  color: #140;
+  cursor: pointer;
 }
-nav > ul { list-style-type: none; }
-nav > ul > li { margin-bottom: 5px; }
+nav > ul {
+  list-style-type: none;
+}
+nav > ul > li {
+  margin-bottom: 5px;
+}
 
 h3 {
-    position: relative;
-    left: -1em;
+  position: relative;
+  left: -1em;
 }
 h3:before {
-    content: url("../images/green_dust_scratch_16px.png");
-    position: relative;
-    left: -.2em;
+  content: url("../images/green_dust_scratch_16px.png");
+  position: relative;
+  left: -0.2em;
 }
 
-h1 { margin-bottom: 1em; }
-p { margin: 1em 0; }
+h1 {
+  margin-bottom: 1em;
+}
+p {
+  margin: 1em 0;
+}
 
-a, a:visited {
-       color: #585;
-       text-decoration: none;
-   }
+a,
+a:visited {
+  color: #585;
+  text-decoration: none;
+}
 a:hover {
-    color: #5A5;
-    text-decoration: none;
+  color: #5a5;
+  text-decoration: none;
 }
 
 table {
-    font-size: inherit;
-    font: 100%;
+  font-size: inherit;
+  font: 100%;
 }
 
 blockquote {
-    color: #364d36;
-    padding: 0.25em 10px;
-    line-height: 1.2em;
+  color: #364d36;
+  padding: 0.25em 10px;
+  line-height: 1.2em;
 }
 
 /*****************************************************************************/
@@ -123,29 +155,29 @@ blockquote {
 /*
 /*****************************************************************************/
 ul.posts {
-    list-style-type: none;
-    margin-bottom: 2em;
+  list-style-type: none;
+  margin-bottom: 2em;
 }
 
 ul.posts li {
-    line-height: 1.75em;
-    display: inline-block;
-    width: 100%;
+  line-height: 1.75em;
+  display: inline-block;
+  width: 100%;
 }
 
 ul.posts span {
-    color: #aaa;
-    font-family: Monaco, "Courier New", monospace;
-    font-size: 80%;
+  color: #aaa;
+  font-family: Monaco, "Courier New", monospace;
+  font-size: 80%;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 ul.posts div {
-    margin: 0 1em 2em 0;
-    float: left;
+  margin: 0 1em 2em 0;
+  float: left;
 }
 
 /*****************************************************************************/
@@ -155,64 +187,64 @@ ul.posts div {
 /*****************************************************************************/
 
 .site {
-    font-size: 115%;
-    text-align: justify;
-    line-height: 1.5em;
+  font-size: 115%;
+  text-align: justify;
+  line-height: 1.5em;
 }
 
 .site .header a {
-    font-weight: bold;
-    text-decoration: none;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .site .header h1.title {
-    display: inline-block;
-    margin-bottom: 2em;
+  display: inline-block;
+  margin-bottom: 2em;
 }
 
 .site .header h1.title a {
-    color: #a00;
+  color: #a00;
 }
 
 .site .header h1.title a:hover {
-    color: #000;
+  color: #000;
 }
 
 .site .header a.extra {
-    color: #aaa;
-    margin-left: 1em;
+  color: #aaa;
+  margin-left: 1em;
 }
 
 .site .header a.extra:hover {
-    color: #000;
+  color: #000;
 }
 
 .site .meta {
-    color: #aaa;
+  color: #aaa;
 }
 
 footer {
-    padding: 1em 0 1em 0;
-    text-align: center;
-    font-size: 80%;
-    color: #666;
-    border-top: 4px solid #eee;
-    margin-top: 2em;
-    overflow: hidden;
+  padding: 1em 0 1em 0;
+  text-align: center;
+  font-size: 80%;
+  color: #666;
+  border-top: 4px solid #eee;
+  margin-top: 2em;
+  overflow: hidden;
 }
 
 footer .contact {
-    float: left;
-    margin-right: 3em;
+  float: left;
+  margin-right: 3em;
 }
 
 footer .contact a {
-    color: #8085C1;
+  color: #8085c1;
 }
 
 img[alt="feed"] {
-    position: relative;
-    top: -.1em;
+  position: relative;
+  top: -0.1em;
 }
 
 /*****************************************************************************/
@@ -223,37 +255,38 @@ img[alt="feed"] {
 
 /* standard */
 #post pre {
-    border: 1px solid #ddd;
-    background-color: #eef;
-    padding: 0 .4em;
-    overflow-x: auto;
-    text-align: left;
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 0.4em;
+  overflow-x: auto;
+  text-align: left;
 }
 
-#post ul, #post ol {
-    margin-left: 1.35em;
+#post ul,
+#post ol {
+  margin-left: 1.35em;
 }
 
 #post code {
-    border: 1px solid #ddd;
-    background-color: #eef;
-    padding: 0 .2em;
-    text-align: left;
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 0.2em;
+  text-align: left;
 }
 
 #post pre code {
-    border: none;
+  border: none;
 }
 
 /* terminal */
 #post pre.terminal {
-    border: 1px solid #000;
-    background-color: #333;
-    color: #FFF;
+  border: 1px solid #000;
+  background-color: #333;
+  color: #fff;
 }
 
 #post pre.terminal code {
-    background-color: #333;
+  background-color: #333;
 }
 
 /*****************************************************************************/
@@ -263,17 +296,19 @@ img[alt="feed"] {
 /*****************************************************************************/
 
 #about {
-    text-align: left;
+  text-align: left;
 }
 
 #me-pic {
-    float: left;
-    margin-right: 1em;
-    width: 138px;
-    height: 187px;
-    background: url('/images/me.jpg') no-repeat center / cover;
+  float: right;
+  margin-left: 1em;
+  margin-bottom: 1em;
+  height: 200px;
+  aspect-ratio: 824 / 954;
+  background: url("/images/me.jpg") no-repeat center / cover;
+  border-radius: 2px;
 }
 
 #about > blockquote {
-    clear: both;
+  clear: both;
 }

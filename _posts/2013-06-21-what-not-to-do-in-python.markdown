@@ -7,16 +7,15 @@ date: 2013-06-21 12:00:00
 Ever run into a bug and think "Wow, I should have known that." Happens to me
 too, here are some of my Python **(py < 3.0)** gotchas:
 
-
 ### Don't forget to close tempfile file descriptors
 
 The `tempfile` module is useful for, well, creating temp files. But one thing
-that's easy to overlook is that a call to `tempfile.mkstemp()` *opens* the file
+that's easy to overlook is that a call to `tempfile.mkstemp()` _opens_ the file
 for you and expects you to close it!
 
 `(fd, filepath) = tempfile.mkstemp()`
 
-The mistake I made was to take the returned filepath and open a *new* file
+The mistake I made was to take the returned filepath and open a _new_ file
 object using `open()`, leaving me with two open fds on the same file.
 I'd remember to close the second one, but totally ignored the first.
 
@@ -26,15 +25,14 @@ errors like:
 
 <pre class="terminal"><code>OSError: [Errno 24] Too many open files: '/tmp/tmprT9oIH'</code></pre>
 
-So, here's what one *Should Do*:
+So, here's what one _Should Do_:
 
 {% highlight python %}
 import os
 import tempfile
 
 fd, fp = tempfile.mkstemp()
-with os.fdopen(fd) as f:
-    # do stuff with the file
+with os.fdopen(fd) as f: # do stuff with the file
 {% endhighlight %}
 
 ### Don't use `self.__class__` in `super`
@@ -56,16 +54,16 @@ Here's an example demonstrating the problem:
 
 {% highlight python %}
 class Gramps(object):
-    def __init__(self):
-        pass
+def **init**(self):
+pass
 
 class Dad(Gramps):
-    def __init__(self):
-        super(self.__class__, self).__init__()
+def **init**(self):
+super(self.**class**, self).**init**()
 
 class Me(Dad):
-    def __init__(self):
-        super(self.__class__, self).__init__()
+def **init**(self):
+super(self.**class**, self).**init**()
 
 Me()
 {% endhighlight %}
@@ -79,24 +77,23 @@ by [Raymond Hettinger](https://twitter.com/raymondh), which discusses this
 detail. That is, when dealing with superclasses, references to `self` are still
 to child instances.
 
-So, here's what one *Should Do*:
+So, here's what one _Should Do_:
 
 {% highlight python %}
 class Gramps(object):
-    def __init__(self):
-        pass
+def **init**(self):
+pass
 
 class Dad(Gramps):
-    def __init__(self):
-        super(Dad, self).__init__()
+def **init**(self):
+super(Dad, self).**init**()
 
 class Me(Dad):
-    def __init__(self):
-        super(Me, self).__init__()
+def **init**(self):
+super(Me, self).**init**()
 
 Me()
 {% endhighlight %}
-
 
 ### Don't forget to `close_fds` when forking server processes
 
@@ -119,20 +116,18 @@ import sys
 
 cmd = None
 
-if len(sys.argv) == 2 and sys.argv[1] == "child":
-    # in the child process
-    port = 50008
-else:
-    # in the parent process
-    cmd = [sys.executable, __file__, 'child']
-    port = 50007
+if len(sys.argv) == 2 and sys.argv[1] == "child": # in the child process
+port = 50008
+else: # in the parent process
+cmd = [sys.executable, __file__, 'child']
+port = 50007
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind(('', port))
 s.listen(1)
 
 if cmd:
-    subprocess.Popen(cmd)
+subprocess.Popen(cmd)
 
 conn, addr = s.accept()
 conn.close()
@@ -148,6 +143,6 @@ Python    1167 jlas    4u    IPv4 0x2e1148bfbb046857       0t0      TCP *:50008 
 
 Not cool.
 
-Of course, here's what one *Should Do*:
+Of course, here's what one _Should Do_:
 
 `subpcrocess.Popen(cmd, close_fds=True)`
